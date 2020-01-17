@@ -6,7 +6,7 @@ To complete this exercise you will have to use git. Create one or several commit
 When answering the questions, remember to use all the resources at your disposal. Asking the internet isn't a form of "cheating", it's a way of learning.
 
  ### What is concurrency? What is parallelism? What's the difference?
- > *Concurrency is the ability of an algorithm or computer program to execute  multiple computations, independent of order, at the same time. Computations are executed concurrently, not sequentially.  Large computations may be divided into smaller tasks which are solved simultaneously, called parallalism. In parallel computing, the problem is typically divided into similar smaller tasks, while in concurrent computing the individual tasks don't necessarily relate to each other and some "inter-process communication" may be required. *
+ > *Concurrency is the ability of an algorithm or computer program to execute  multiple computations, independent of order, at the same time. Computations are executed concurrently, not sequentially.  Large computations may be divided into smaller tasks which are solved simultaneously, called parallalism. In parallel computing, the problem is typically divided into similar smaller tasks, while in concurrent computing the individual tasks don't necessarily relate to each other and some "inter-process communication" may be required.*
  
  ### Why have machines become increasingly multicore in the past decade?
  > *Computer performance have formaly been improved by frequency scaling of processors. However, when reaching a certain Hertz of processing frequency, physical constraints limits the potential for efficient further improvement. This makes multiple cores attractive, resulting in a need of parallelism.*
@@ -23,7 +23,7 @@ When answering the questions, remember to use all the resources at your disposal
  > *Citing Greg Hewgill from stack overflow: "Both processes and threads are independent sequences of execution. The typical difference is that threads (of the same process) run in a shared memory space, while processes run in separate memory spaces". Coroutines are threads that are cooperatively multitasked, rather than preemtively multitasked. Green threads are threads that are not managed by the OS.*
  
  ### Which one of these do `pthread_create()` (C/POSIX), `threading.Thread()` (Python), `go` (Go) create?
- > * `pthread_create()` creates a new thread.  `threading.Thread()` creates a threading object. Each of these objects represents an activity, started by an member function. The activity is run in a separate thread of control. `go` creates a "goroutine", a lightweight thread. Goroutines are managed by Go Runtime, so they are essentially green threads * 
+ >  * `pthread_create()` creates a new thread.  `threading.Thread()` creates a threading object. Each of these objects represents an activity, started by an member function. The activity is run in a separate thread of control. `go` creates a "goroutine", a lightweight thread. Goroutines are managed by Go Runtime, so they are essentially green threads.* 
  
  ### How does pythons Global Interpreter Lock (GIL) influence the way a python Thread behaves?
  > *GIL allows only one thread to execute Python code at once.*
